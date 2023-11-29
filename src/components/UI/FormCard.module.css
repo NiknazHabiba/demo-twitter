@@ -1,0 +1,44 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    padding: 3%;
+    border: 6px solid #6E85B7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width : 30%;
+}
+
+.form label{
+    margin-bottom: 0.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #316B83;
+}
+
+.form input{
+    margin-bottom: 0.8rem;
+    height: 1.7rem;
+    border: 3px solid #9AD0EC;
+    border-radius: 5px;
+}
+
+.form input:focus{
+    color: #11324D;
+    font-weight: 700;
+    border: 3px solid #1572A1;
+    outline: none;
+}
+
+.form h2{
+    text-align: center;
+    color: #316B83;
+}
+
+.form small{
+    color: #316B83;
+}
+
+.form p{
+    color: red;
+}
+

@@ -1,6 +1,7 @@
+import SignUpForm from "../components/SignUp/SignUpForm";
 
 const SignUp = () => {
-    return <h1>This is SignUp Page</h1>
+    return <SignUpForm />
 }
 
 export default SignUp;

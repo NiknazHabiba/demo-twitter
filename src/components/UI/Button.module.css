@@ -1,0 +1,14 @@
+.button{
+    height: 2.3rem;
+    margin-top: 0.5rem;
+    background-color: #6886C5;
+    border:none;
+    border-radius: 10px; 
+    color: #BAE5E5;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button:hover{
+    background-color: #BAE5E5;
+    color: #6886C5;
+}

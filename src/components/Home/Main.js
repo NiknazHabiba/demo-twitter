@@ -1,4 +1,4 @@
-import Twitts from "./Twitts";
+import Twitts from "./Twitts/Twitts";
 
 const DUMMY_TWITTS = [
   {
