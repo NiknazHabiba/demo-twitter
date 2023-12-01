@@ -9,12 +9,8 @@ const AuthContext = createContext({
   logOutUser: () => {},
 });
 
-const initail = () => {
-  return [];
-};
-
 export const AuthContextProvider = (props) => {
-  const [usersList, setUsersList] = useState(initail);
+  const [usersList, setUsersList] = useState([]);
   const [userIsLoggedIn, setUserIsLoggedIn] = useState("");
 
   const addNewUserHandler = (newUser) => {

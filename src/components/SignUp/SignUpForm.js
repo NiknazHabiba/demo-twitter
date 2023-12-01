@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "../UI/Button";
 import FormCard from "../UI/FormCard";
 import { useContext, useRef, useState } from "react";
-import AuthContext from "../context/auth-context";
+import AuthContext from "../../context/auth-context";
 
 const SignUpForm = () => {
   const emailRef = useRef();

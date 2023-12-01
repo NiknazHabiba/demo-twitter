@@ -2,13 +2,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Button from "../UI/Button";
 import FormCard from "../UI/FormCard";
 import { useContext, useRef, useState } from "react";
-import AuthContext from "../context/auth-context";
+import AuthContext from "../../context/auth-context";
 
 const LogInForm = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const authCtx = useContext(AuthContext);
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
   const nav = useNavigate();
 
   const logInSubmitHandler = (event) => {
