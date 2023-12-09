@@ -1,6 +1,7 @@
+import NewTwittForm from "../components/NewTwitt/NewTwittForm";
 
 const NewTwitt = () => {
-    return <h1>This is New Twitt Page</h1>
+    return <NewTwittForm />
 }
 
 export default NewTwitt;

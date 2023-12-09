@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const AuthContext = createContext({
   usersList: [],
@@ -9,9 +9,27 @@ const AuthContext = createContext({
   logOutUser: () => {},
 });
 
+const initialUserValue = () => {
+  const currentUser = localStorage.getItem("user");
+  return currentUser ? JSON.parse(currentUser) : {};
+};
+
+const initialUsersList = () => {
+  const allUsers = localStorage.getItem("users");
+  return allUsers ? JSON.parse(allUsers) : [];
+};
+
 export const AuthContextProvider = (props) => {
-  const [usersList, setUsersList] = useState([]);
-  const [userIsLoggedIn, setUserIsLoggedIn] = useState("");
+  const [usersList, setUsersList] = useState(initialUsersList);
+  const [userIsLoggedIn, setUserIsLoggedIn] = useState(initialUserValue);
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(userIsLoggedIn));
+  }, [userIsLoggedIn]);
+
+  useEffect(() => {
+    localStorage.setItem("users", JSON.stringify(usersList));
+  }, [usersList]);
 
   const addNewUserHandler = (newUser) => {
     setUsersList((prev) => [newUser, ...prev]);

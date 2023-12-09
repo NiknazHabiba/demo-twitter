@@ -42,3 +42,16 @@
     color: red;
 }
 
+.form textarea{
+    resize: none;
+    border: 3px solid #9AD0EC;
+    border-radius: 5px;
+}
+
+.form textarea:focus{
+    color: #11324D;
+    font-weight: 700;
+    border: 3px solid #1572A1;
+    outline: none;
+}
+
