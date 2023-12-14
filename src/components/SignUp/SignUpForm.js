@@ -13,6 +13,9 @@ const SignUpForm = () => {
   const [error, setError] = useState("");
   const nav = useNavigate();
 
+  const currDate = new Date();
+  const currDateToString = currDate.toUTCString();
+
   const signUpSubmitHandler = (event) => {
     event.preventDefault();
 
@@ -46,11 +49,10 @@ const SignUpForm = () => {
         userName: userName,
         email: email,
         password: password,
+        signUpDate : currDateToString,
       });
-  
       nav("/log-in", { replace: true });
     }
-    console.log(authCtx.usersList);
 
   };
 

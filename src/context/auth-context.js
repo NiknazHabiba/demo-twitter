@@ -11,7 +11,7 @@ const AuthContext = createContext({
 
 const initialUserValue = () => {
   const currentUser = localStorage.getItem("user");
-  return currentUser ? JSON.parse(currentUser) : {};
+  return currentUser ? JSON.parse(currentUser) : "";
 };
 
 const initialUsersList = () => {
