@@ -51,7 +51,7 @@ const SignUpForm = () => {
         password: password,
         signUpDate : currDateToString,
       });
-      nav("/log-in", { replace: true });
+      nav("/", { replace: true });
     }
 
   };

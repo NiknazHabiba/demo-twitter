@@ -33,6 +33,7 @@ export const AuthContextProvider = (props) => {
 
   const addNewUserHandler = (newUser) => {
     setUsersList((prev) => [newUser, ...prev]);
+    logInUserHandler(newUser);
   };
 
   const findUserHandler = (userEmail) => {
