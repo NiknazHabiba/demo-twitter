@@ -19,17 +19,22 @@ const Header = (props) => {
         <ul>
           {!userIsLoggedIn && (
             <li>
-              <Link to="/sign-up">SignUp</Link>
+              <Link to="/log-in">LogIn</Link>
             </li>
           )}
           {!userIsLoggedIn && (
             <li>
-              <Link to="/log-in">LogIn</Link>
+              <Link to="/sign-up">SignUp</Link>
             </li>
           )}
           {userIsLoggedIn && (
             <li>
               <Link to="/profile">Profile</Link>
+            </li>
+          )}
+          {userIsLoggedIn && (
+            <li>
+              <Link to="/add-twitt">Add Twitt</Link>
             </li>
           )}
           {userIsLoggedIn && (

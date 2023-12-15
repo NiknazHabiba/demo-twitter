@@ -46,6 +46,7 @@
     resize: none;
     border: 3px solid #9AD0EC;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 .form textarea:focus{

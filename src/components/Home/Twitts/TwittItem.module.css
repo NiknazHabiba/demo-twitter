@@ -16,9 +16,20 @@
     font-weight: 700;
 }
 
-.email{
-    font-family :Arial, Helvetica, sans-serif;
-    color : #8FBDD3;
+
+.twitt-item-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitt-item-footer a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #6096B4;
+}
+
+.twitt-item-footer a:hover{
+    color: #7286D3;
 }
 
 
